@@ -64,6 +64,8 @@ function reset() {
     container.style.height = "32rem"
     lap_container.style.display = "none"
     lapNum = 0
+
+    circle.style.strokeDashoffset = length
 }
 
 function lap() {

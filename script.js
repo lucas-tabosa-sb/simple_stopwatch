@@ -8,6 +8,12 @@ const LapBtn = document.querySelector('.lap-btn')
 let container = document.querySelector('.container')
 let lap_container = document.querySelector('.lap-container')
 
+const circle = document.getElementById('circle2')
+const length = circle.getTotalLength()
+
+circle.style.strokeDasharray = length
+circle.style.strokeDashoffset = length
+
 function start() {
     startTimer = setInterval(() => {
         ms++
@@ -24,13 +30,14 @@ function start() {
             sec = 0
             min = min < 10 ? "0" + min : min
         }
-
+        
         if(min == 60){
             hour++
             min = 0
             hour = hour < 10 ? "0" + hour : hour
         }
-
+        
+        circle.style.strokeDashoffset = length - (sec / 60) * length
         putValue()
     }, 10);
 

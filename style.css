@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #b5cac8;
+    background: #94d1ee;
     font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     width: 100%;
@@ -36,12 +36,11 @@ html {
     width: 20rem;
     border-radius: 100%;
     position: relative;
-    top: 11.3rem;
+    top: 13.3rem;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
-    background: linear-gradient(#fbb03b, #d4145a);
 }
 
 
@@ -59,7 +58,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgb(204, 219, 232) .3rem .3rem .6rem 0 inset, rgb(255, 255, 255, 0.5) -.3rem -.3rem .6rem .1rem inset;
 }
 
 .hour,
@@ -79,7 +77,7 @@ html {
 .lap-container {
     height: 17rem;
     width: 90%;
-    border-top: .1rem solid #808080;
+    border-top: .1rem solid #8080805b;
     position: absolute;
     bottom: -8.5rem;
     left: 50%;
@@ -91,7 +89,7 @@ html {
 .lap-container > li {
     list-style-type: none;
     padding: .5rem;
-    border-bottom: .1rem solid #808080;
+    border-bottom: .1rem solid #80808050;
     display: flex;
     justify-content: space-around;
 }
@@ -104,7 +102,7 @@ button {
     all: unset;
     padding: .5rem;
     width: 10rem;
-    background: linear-gradient(#fbb03b, #d4145a);
+    background: linear-gradient(to top right,#1c78ce, #4ebcf0);
     text-align: center;
     color: #ffffff;
     border-radius: 3rem;
@@ -113,6 +111,7 @@ button {
     left: 75%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .lap-btn, 
@@ -123,3 +122,26 @@ button {
 .stop-btn, .lap-btn {
     display: none;
 }
+
+svg{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    vertical-align: middle;
+  }
+  circle{
+    stroke-width: 1.5rem;
+    fill: transparent;
+    stroke-linecap: round;
+  }
+  
+  #circle1{
+    stroke: rgba(0,0,0, .4);
+  }
+  
+  #circle2{
+      stroke:#3aa3e9;
+      transition: 1s linear;
+  }

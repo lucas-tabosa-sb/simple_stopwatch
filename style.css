@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&Family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #94d1ee;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.container {
+    height: 40rem;
+    width: 30rem;
+    background: #ffffff;
+    border-radius: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) .5rem .5rem 1rem 1rem;
+}
+
+.timer-container {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    position: relative;
+    top: 13.3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
+}
+
+
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 18rem;
+    width: 18rem;
+    background: #ffffff;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour,
+.minute,
+.second {
+    font-size: 3.3rem;
+    margin-left: .3rem;
+}
+
+.millisecond {
+    position: relative;
+    top: -.8rem;
+    font-size: 1.3rem;
+    color: #e63348;
+}
+
+.lap-container {
+    height: 17rem;
+    width: 90%;
+    border-top: .1rem solid #8080805b;
+    position: absolute;
+    bottom: -8.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    display: none;
+}
+
+.lap-container > li {
+    list-style-type: none;
+    padding: .5rem;
+    border-bottom: .1rem solid #80808050;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lap_time {
+    float: right;
+}
+
+button {
+    all: unset;
+    padding: .5rem;
+    width: 10rem;
+    background: linear-gradient(to top right,#1c78ce, #4ebcf0);
+    text-align: center;
+    color: #ffffff;
+    border-radius: 3rem;
+    position: absolute;
+    top: 28rem;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lap-btn, 
+.reset-btn {
+    left: 25%;
+}
+
+.stop-btn, .lap-btn {
+    display: none;
+}
+
+svg{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    vertical-align: middle;
+  }
+  circle{
+    stroke-width: 1.5rem;
+    fill: transparent;
+    stroke-linecap: round;
+  }
+  
+  #circle1{
+    stroke: rgba(0,0,0, .4);
+  }
+  
+  #circle2{
+      stroke:#3aa3e9;
+      transition: 1s linear;
+  }

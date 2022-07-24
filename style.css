@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #94a7a5;
+    background: #b5cac8;
     font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     width: 100%;
@@ -44,6 +44,8 @@ html {
     background: linear-gradient(#fbb03b, #d4145a);
 }
 
+
+
 .timer {
     position: absolute;
     top: 50%;
@@ -76,7 +78,7 @@ html {
 
 .lap-container {
     height: 17rem;
-    width: 50%;
+    width: 90%;
     border-top: .1rem solid #808080;
     position: absolute;
     bottom: -8.5rem;
@@ -90,6 +92,8 @@ html {
     list-style-type: none;
     padding: .5rem;
     border-bottom: .1rem solid #808080;
+    display: flex;
+    justify-content: space-around;
 }
 
 .lap_time {
